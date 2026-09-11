@@ -33,7 +33,7 @@ jobs:
           set -euo pipefail
           tag="$(gh api repos/MetaCubeX/mihomo/releases/latest --jq '.tag_name')"
           asset="mihomo-linux-amd64-compatible-${tag}.gz"
-          url="$(gh api "repos/MetaCubeX/mihomo/releases/tags/${tag}" --jq ".assets[] | select(.name == \\\"${asset}\\\") | .browser_download_url")"
+          url="$(gh api "repos/MetaCubeX/mihomo/releases/tags/${tag}" --jq ".assets[] | select(.name == \"${asset}\") | .browser_download_url")"
           test -n "$url"
           curl --fail --location --retry 3 --output /tmp/mihomo.gz "$url"
           gzip --decompress --stdout /tmp/mihomo.gz > bin/mihomo
