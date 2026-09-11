@@ -43,7 +43,9 @@ jobs:
       - name: Update YAML and MRS rules
         env:
           MIHOMO_BIN: ./bin/mihomo
-        run: ./scripts/update-rules.sh
+        run: |
+          ./scripts/update-rules.sh
+          ./scripts/update-blackmatrix7-rules.py
 
       - name: Commit changes
         run: |
