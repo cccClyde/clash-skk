@@ -4,6 +4,12 @@ set -euo pipefail
 ROOT_URL="${ROOT_URL:-https://ruleset.skk.moe}"
 OUT_DIR="${OUT_DIR:-.}"
 BIN_PATH="${BIN_PATH:-./bin/clash-skk}"
+MIHOMO_BIN="${MIHOMO_BIN:-mihomo}"
+
+if [[ ! -x "$MIHOMO_BIN" ]] && ! command -v "$MIHOMO_BIN" >/dev/null 2>&1; then
+  echo "mihomo executable not found: $MIHOMO_BIN" >&2
+  exit 1
+fi
 
 links=$(python3 - "$ROOT_URL" <<'PY'
 import sys
@@ -43,31 +49,71 @@ while IFS= read -r path; do
   case "$path" in
     /Clash/domainset/*)
       rule_type="domain"
+      mrs_behavior="domain"
       make_domain_classical_copy=1
       ;;
     /Clash/non_ip/*)
       rule_type="classic"
+      mrs_behavior=""
       ;;
     /Clash/ip/*)
       rule_type="ipcidr"
+      mrs_behavior="ipcidr"
       ;;
     *)
       continue
       ;;
   esac
-  
-  echo "${ROOT_URL}${path}"
-  output_path="${OUT_DIR%/}${path%.txt}.yaml"
-  echo $output_path
-  mkdir -p "$(dirname "$output_path")"
-  "$BIN_PATH" -t "$rule_type" -u "${ROOT_URL}${path}" -o "$output_path"
 
-  # For Shadowrocket compatibility, domainset rules need an extra classical copy.
+  source_url="${ROOT_URL}${path}"
+  yaml_path="${OUT_DIR%/}${path%.txt}.yaml"
+  echo "$source_url"
+  echo "$yaml_path"
+  mkdir -p "$(dirname "$yaml_path")"
+  "$BIN_PATH" -t "$rule_type" -u "$source_url" -o "$yaml_path"
+
+  # MRS supports only domain and ipcidr behaviors; classical rules remain YAML-only.
+  if [[ -n "$mrs_behavior" ]]; then
+    mrs_path="${OUT_DIR%/}/MRS/${path#/Clash/}"
+    mrs_path="${mrs_path%.txt}.mrs"
+    mkdir -p "$(dirname "$mrs_path")"
+    mrs_input="$yaml_path"
+
+    # ip/ sources may also contain DOMAIN and classical IP-CIDR entries.
+    # An ipcidr MRS can contain only bare, valid CIDRs.
+    if [[ "$mrs_behavior" == "ipcidr" ]]; then
+      mrs_input="$(mktemp)"
+      if ! python3 ./scripts/make-mrs-ipcidr-yaml.py "$yaml_path" "$mrs_input"; then
+        echo "Skip MRS with no valid CIDR: $yaml_path" >&2
+        rm -f "$mrs_input" "$mrs_path"
+        continue
+      fi
+    fi
+
+    if python3 - "$mrs_input" <<'PY'
+import sys
+with open(sys.argv[1], encoding="utf-8") as f:
+    raise SystemExit(0 if any(line.startswith("- ") for line in f) else 1)
+PY
+    then
+      echo "$mrs_path"
+      "$MIHOMO_BIN" convert-ruleset "$mrs_behavior" yaml "$mrs_input" "$mrs_path"
+      test -s "$mrs_path"
+    else
+      echo "Skip empty ruleset: $yaml_path" >&2
+      rm -f "$mrs_path"
+    fi
+    if [[ "$mrs_input" != "$yaml_path" ]]; then
+      rm -f "$mrs_input"
+    fi
+  fi
+
+  # For Shadowrocket compatibility, domainset rules need an extra classical YAML copy.
   if [[ "$make_domain_classical_copy" == "1" ]]; then
     name="$(basename "${path%.txt}")"
     classical_output_path="${OUT_DIR%/}/Clash/non_ip/${name}_classical.yaml"
     echo "$classical_output_path"
     mkdir -p "$(dirname "$classical_output_path")"
-    "$BIN_PATH" -t "domain-classical" -u "${ROOT_URL}${path}" -o "$classical_output_path"
+    "$BIN_PATH" -t "domain-classical" -u "$source_url" -o "$classical_output_path"
   fi
 done <<< "$links"
