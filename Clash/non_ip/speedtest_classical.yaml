@@ -1,10 +1,10 @@
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-09-10T19:40:04.133Z
-# Size: 3381
+# Last Updated: 2026-09-13T19:26:57.071Z
+# Size: 3385
 #
 # This file contains common speedtest endpoints.
 #
-# $content-hash-v1$:qtfDIUZcmC_N8yTgYKXe0oXzINNpt-lNqw9YV8Wh0YU$
+# $content-hash-v1$:K4FU-Ei280IBSdxlsD0QgtthsUkScvsGelBCd2TazUc$
 #########################################
 payload:
 - DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -441,6 +441,7 @@ payload:
 - DOMAIN,ooklaspeed.ttron.eu
 - DOMAIN,purtel39.purtel.com
 - DOMAIN,purtel70.purtel.com
+- DOMAIN,serv8.a2jnetwork.in
 - DOMAIN,sg.st.spacecore.pro
 - DOMAIN,sp.merkurnet.com.tr
 - DOMAIN,sp01.rbfibra.net.br
@@ -720,6 +721,7 @@ payload:
 - DOMAIN,speedtest.neitel.net
 - DOMAIN,speedtest.netafy.com
 - DOMAIN,speedtest.nethiz.net
+- DOMAIN,speedtest.netpool.in
 - DOMAIN,speedtest.netrack.ru
 - DOMAIN,speedtest.oopaya.com
 - DOMAIN,speedtest.quadro.net
@@ -1921,6 +1923,7 @@ payload:
 - DOMAIN,speedtest.powernet.com.ru
 - DOMAIN,speedtest.puraknet.com.br
 - DOMAIN,speedtest.rajeshcable.com
+- DOMAIN,speedtest.respawnhost.com
 - DOMAIN,speedtest.rtm.t-mobile.nl
 - DOMAIN,speedtest.samparkinfo.com
 - DOMAIN,speedtest.sesfiber.com.br
@@ -3016,6 +3019,7 @@ payload:
 - DOMAIN,st-atakoy-1.turksatkablo.com.tr
 - DOMAIN,st-edirne-1.turksatkablo.com.tr
 - DOMAIN,st-manisa-1.turksatkablo.com.tr
+- DOMAIN,st-mersin-1.turksatkablo.com.tr
 - DOMAIN,st-samsun-1.turksatkablo.com.tr
 - DOMAIN,stbellevillewireless.rogers.com
 - DOMAIN,stgeorgetownwireless.rogers.com
