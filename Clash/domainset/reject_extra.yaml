@@ -1,6 +1,6 @@
 # Sukka's Ruleset - Reject Extra
-# Last Updated: 2026-09-22T18:38:06.502Z
-# Size: 79527
+# Last Updated: 2026-09-22T20:11:11.152Z
+# Size: 79504
 #
 # The domainset supports AD blocking, tracking protection, privacy protection, anti-mining
 #
@@ -28,7 +28,7 @@
 #   - https://ublockorigin.pages.dev/thirdparties/easylist-notifications.txt
 #   - https://urlhaus-filter.pages.dev/urlhaus-filter-domains-online.txt
 #
-# $content-hash-v1$:1aIsjjoHNUAbSXisN3CChsrGGziSP8WG84dadrMrVGc$
+# $content-hash-v1$:BDRvZY850-D3-pcnRxR0RB6kbYF6oJ0LE05NqfUFpgs$
 #########################################
 payload:
 - '7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe'
@@ -21165,7 +21165,6 @@ payload:
 - '+.gloos-zus.info'
 - '+.glossyburn.pro'
 - '+.gluedpixel.com'
-- '+.gnowobwyya.com'
 - '+.go.fastspot.io'
 - '+.go.jetswap.com'
 - '+.go.mobisla.com'
@@ -22473,7 +22472,6 @@ payload:
 - '+.ppc-direct.com'
 - '+.ppcprotect.com'
 - '+.pprocessor.net'
-- '+.pqudfrhrve.com'
 - '+.pr-sunshine.de'
 - '+.pranktetui.cfd'
 - '+.prchecker.info'
@@ -27510,7 +27508,6 @@ payload:
 - '+.serverpower.net'
 - '+.service-cmp.com'
 - '+.services510.net'
-- '+.servojocote.com'
 - '+.servtraff97.com'
 - '+.settbayeta.qpon'
 - '+.sevensmooon.com'
@@ -30904,7 +30901,6 @@ payload:
 - '+.irancoinmine.com'
 - '+.iroha-oran24.com'
 - '+.ironfish.network'
-- '+.irredsurahi.cyou'
 - '+.is-vvhatsapp.com'
 - '+.isicledepure.cfd'
 - '+.isochordixy.shop'
@@ -32668,7 +32664,6 @@ payload:
 - '+.simpleswap-io.at'
 - '+.simplyartful.com'
 - '+.simplyhelper.com'
-- '+.sindmagneto.cyou'
 - '+.singingprior.com'
 - '+.sinogamepeck.com'
 - '+.sintudruses.cyou'
@@ -32716,7 +32711,6 @@ payload:
 - '+.smpop.icfcdn.com'
 - '+.smsecurepath.com'
 - '+.smuggerpalar.cfd'
-- '+.smughaltica.cyou'
 - '+.snakemineral.com'
 - '+.snarlsfuzzes.com'
 - '+.snatchattest.com'
@@ -35382,7 +35376,6 @@ payload:
 - '+.englishcentral.fr'
 - '+.enjoylife2001.net'
 - '+.enolatethurm.shop'
-- '+.enrailtwiddly.cfd'
 - '+.enrichbovate.cyou'
 - '+.entaspectsofc.org'
 - '+.entreatbeggar.com'
@@ -36158,7 +36151,6 @@ payload:
 - '+.jyvkwqjbvwojl.top'
 - '+.jyvkwqjremmly.top'
 - '+.jyvkwqjremqkz.top'
-- '+.kabongahaulse.com'
 - '+.kalwarsandawe.cfd'
 - '+.kamsinsrhagon.cfd'
 - '+.kashakinsman.shop'
@@ -37141,7 +37133,6 @@ payload:
 - '+.politicscleft.com'
 - '+.politicsdryer.com'
 - '+.politiquemania.fr'
-- '+.polleebubonic.cfd'
 - '+.pollenunmoved.com'
 - '+.polygonautism.cfd'
 - '+.polypsburrer.cyou'
@@ -38904,7 +38895,6 @@ payload:
 - '+.abaxialquokkas.cfd'
 - '+.abeyantlaurae.qpon'
 - '+.abhmancnvqweb.site'
-- '+.abiosissemarum.cfd'
 - '+.abkxyinpiffsk.site'
 - '+.abnehmenkabofit.de'
 - '+.aborterinspire.cfd'
@@ -39207,7 +39197,6 @@ payload:
 - '+.allprizesforme.com'
 - '+.allurefaintest.com'
 - '+.allxgwgogikhd.site'
-- '+.almemardemurer.com'
 - '+.almonermothery.cfd'
 - '+.alngdwetstglj.site'
 - '+.alodiumtswana.qpon'
@@ -41126,7 +41115,6 @@ payload:
 - '+.ff.greensite.click'
 - '+.ffdagjkfnjmil.site'
 - '+.ffhuaiwestbtl.site'
-- '+.ffjqjsiovhjku.site'
 - '+.fftwljklhkigm.site'
 - '+.fggovwtouynec.site'
 - '+.fgjsfrafgkibz.site'
@@ -41225,7 +41213,6 @@ payload:
 - '+.foldpeacefully.com'
 - '+.follymutespout.com'
 - '+.fomirpggopead.site'
-- '+.fonduesessera.shop'
 - '+.fontdeterminer.com'
 - '+.footsteporgans.com'
 - '+.fopxicajsprkh.site'
@@ -41398,7 +41385,6 @@ payload:
 - '+.gatlingmallow.qpon'
 - '+.gatrgoqldtooe.site'
 - '+.gaupingeyewink.com'
-- '+.gawkiestwilly.qpon'
 - '+.gaxyssprvcejy.site'
 - '+.gbblpbibctqex.site'
 - '+.gbdifgyealbpd.site'
@@ -43878,7 +43864,6 @@ payload:
 - '+.potholeresumer.cfd'
 - '+.potionsfurther.com'
 - '+.potracklapser.qpon'
-- '+.pottagegobony.cyou'
 - '+.pourcentfilers.com'
 - '+.powsnbzvggnpk.site'
 - '+.pozkbycypzgty.site'
@@ -44897,7 +44882,6 @@ payload:
 - '+.snitchmountain.com'
 - '+.snkgwapjqhnuy.site'
 - '+.snorkelzutugil.com'
-- '+.snudgeoxbrake.shop'
 - '+.snuffarguments.com'
 - '+.snupperdaulias.cfd'
 - '+.snvkkflgdoekk.site'
@@ -46497,7 +46481,6 @@ payload:
 - '+.xylonicwowser.shop'
 - '+.xynthfjiefofs.site'
 - '+.xypmbdsisnrqe.site'
-- '+.xyxiqtwkjqflt.site'
 - '+.xzkqduqxaavac.site'
 - '+.xzlzfiseeuxfw.site'
 - '+.xzphlvnrjgzsw.site'
@@ -50929,7 +50912,6 @@ payload:
 - '+.nvidia-graphics.top'
 - '+.nvpartnerspromo.com'
 - '+.nvpbwocxzbumr.space'
-- '+.nvvrkxdypcwmv.space'
 - '+.nvwmvpmsaiuer.space'
 - '+.nwjunrzhppxvd.space'
 - '+.nwmlglasjxvgx.space'
@@ -51319,7 +51301,6 @@ payload:
 - '+.picketssuavely.qpon'
 - '+.picture-uploads.com'
 - '+.piefortcreaker.cyou'
-- '+.pielikeparison.cyou'
 - '+.pierconditioner.com'
 - '+.pierinfactories.net'
 - '+.pietismfinland.cyou'
@@ -52088,7 +52069,6 @@ payload:
 - '+.sbrxizryixvpz.space'
 - '+.sbtiulwkstzpt.space'
 - '+.scabridwaltzer.cyou'
-- '+.scalenivitriol.cyou'
 - '+.scammerrecorder.com'
 - '+.scarcehepatitis.com'
 - '+.scareshortnovel.com'
@@ -54387,7 +54367,6 @@ payload:
 - '+.agdqpqizyvmyx.online'
 - '+.agentinteractive.com'
 - '+.agfasjfhveoqf.online'
-- '+.agjrfynvhlupc.online'
 - '+.agmvwgwhgpnyu.online'
 - '+.agowtayufyalh.online'
 - '+.agwrybiopjmta.online'
@@ -56874,7 +56853,6 @@ payload:
 - '+.laughterentitled.com'
 - '+.lavatoryyourself.com'
 - '+.laxarmaturecliff.com'
-- '+.lbdntfvcafqjp.online'
 - '+.lbdphmpwmwdzw.online'
 - '+.lbg-calcs.vercel.app'
 - '+.lbiusrlvwnqgw.online'
@@ -66719,7 +66697,6 @@ payload:
 - '+.scoupnoggscanapes.qpon'
 - '+.scrapstableappoint.com'
 - '+.scratchedgenuinely.com'
-- '+.scribersalmonorbs.qpon'
 - '+.scriptproxy.pie.net.pk'
 - '+.scripts.xxxsexcams.net'
 - '+.scrypt.cryptobroker.io'
