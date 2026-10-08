@@ -1,6 +1,6 @@
 # Sukka's Ruleset - Reject Extra
-# Last Updated: 2026-10-08T10:17:52.239Z
-# Size: 76566
+# Last Updated: 2026-10-08T12:03:30.307Z
+# Size: 76551
 #
 # The domainset supports AD blocking, tracking protection, privacy protection, anti-mining
 #
@@ -28,7 +28,7 @@
 #   - https://ublockorigin.pages.dev/thirdparties/easylist-notifications.txt
 #   - https://urlhaus-filter.pages.dev/urlhaus-filter-domains-online.txt
 #
-# $content-hash-v1$:NmtODuDxJ79sMQoJ_fg6q6_ZA7RKT8HhTlDIjt9LtoQ$
+# $content-hash-v1$:aDXu-h1Jhma4-D-uPmxh5LHFzLUbPZa3PFjbpTIDEaQ$
 #########################################
 payload:
 - '7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe'
@@ -18168,7 +18168,6 @@ payload:
 - '+.vaguefact.pro'
 - '+.valeenjoy.com'
 - '+.valemedia.net'
-- '+.valesalon.cfd'
 - '+.valueclick.jp'
 - '+.vankhang.shop'
 - '+.vanmaymomo.me'
@@ -22406,7 +22405,6 @@ payload:
 - '+.realcounter.eu'
 - '+.realdrjudy.com'
 - '+.realist.gen.tr'
-- '+.reallywire.com'
 - '+.realpush.media'
 - '+.rearealrea.com'
 - '+.reariimime.com'
@@ -30267,7 +30265,6 @@ payload:
 - '+.jumpschmoos.cyou'
 - '+.junclikrmedi.com'
 - '+.jundclikrmdi.com'
-- '+.juponsteered.cfd'
 - '+.juqzuljruojt.com'
 - '+.juraraleucon.cfd'
 - '+.justhardness.com'
@@ -31356,7 +31353,6 @@ payload:
 - '+.quaidesbulles.fr'
 - '+.quaintcounty.pro'
 - '+.qualitygamer.com'
-- '+.quarlyachan.cyou'
 - '+.quarterserver.de'
 - '+.quasicurrant.com'
 - '+.queasydashed.top'
@@ -32253,7 +32249,6 @@ payload:
 - '+.tornactivity.pro'
 - '+.torpidtongue.com'
 - '+.torsounstick.cfd'
-- '+.toskbuffier.cyou'
 - '+.touchclarity.com'
 - '+.tour.cineble.com'
 - '+.tousleoutbid.com'
@@ -33995,7 +33990,6 @@ payload:
 - '+.cuteysdefang.qpon'
 - '+.cybersecurity.mba'
 - '+.cydonrespelt.cyou'
-- '+.cymarintroth.cyou'
 - '+.cypheraurigal.cfd'
 - '+.cypressbygone.com'
 - '+.daily.yubanet.com'
@@ -36880,7 +36874,6 @@ payload:
 - '+.tulipsameedge.com'
 - '+.tum8.vuu3bd53.lol'
 - '+.tunaspiritual.com'
-- '+.tundishfence.qpon'
 - '+.tunkajumping.cyou'
 - '+.tunketdocker.qpon'
 - '+.tur-ptt-posen.com'
@@ -43239,7 +43232,6 @@ payload:
 - '+.steamedkipper.cyou'
 - '+.steelbitepro24.com'
 - '+.steelhorsecoin.com'
-- '+.steppescooeed.cyou'
 - '+.steppesequence.com'
 - '+.stibbleberede.cyou'
 - '+.stionicgeodist.com'
@@ -45179,7 +45171,6 @@ payload:
 - '+.ajjlasruwwrlt.store'
 - '+.ajskgbnmafymf.space'
 - '+.ajujqdualdsao.space'
-- '+.ajxyjzwhhcznj.space'
 - '+.akdnhszqeqasz.store'
 - '+.akftqsaedhfqt.space'
 - '+.aknadnauhsmgu.space'
@@ -47319,7 +47310,6 @@ payload:
 - '+.hknztzqlkjzhc.space'
 - '+.hkxkdpxlemboe.space'
 - '+.hldijphcjszui.store'
-- '+.hldkhuflnbahs.space'
 - '+.hlgqbkgvfvelf.store'
 - '+.hlkwshtzpeuma.space'
 - '+.hlpjzdkddzyxb.space'
@@ -49287,7 +49277,6 @@ payload:
 - '+.praktijkewalts.info'
 - '+.prbxckwtajncq.space'
 - '+.preacheropening.com'
-- '+.preampsciboney.cyou'
 - '+.predestineshack.com'
 - '+.pregnantskipper.com'
 - '+.premium-utility.com'
@@ -49391,7 +49380,6 @@ payload:
 - '+.pwxnufxcwbbev.space'
 - '+.pwzxkpphqoeby.store'
 - '+.px9.nuderedtube.com'
-- '+.pxb9nb3bghif9j8.cfd'
 - '+.pxekfmmylcrqo.space'
 - '+.pxl-mailtracker.com'
 - '+.pxlanvvuiyrcm.space'
@@ -55714,7 +55702,6 @@ payload:
 - '+.qdkpyueaqswtv.online'
 - '+.qdmizarqbbyqv.online'
 - '+.qdmjtjfnzuqsr.online'
-- '+.qdmwrrtpfokna.online'
 - '+.qdpyytqowlroy.online'
 - '+.qdssy.balistrera.sbs'
 - '+.qdurzzrmxptvr.online'
@@ -65976,7 +65963,6 @@ payload:
 - '+.prudentialonerealty.com'
 - '+.psigloutishrameous.cyou'
 - '+.psychobunnycolombia.com'
-- '+.psycholsatineduessa.cfd'
 - '+.pukerrevisitassalto.cfd'
 - '+.pungovernorindustry.com'
 - '+.purposeolivebathtub.com'
@@ -75756,7 +75742,6 @@ payload:
 - '+.2wygltrjq1.h79xho6zgijze24hv94.cyou'
 - '+.5.5tvcz6ovxvxxptj71te9ipl7hggw.cyou'
 - '+.72rtlmvk2213hluu14qh7i5qxgnl8gr.cfd'
-- '+.72xlpn3pli94ml8gl16riyfzzyofyi.rest'
 - '+.9.f2kif7rht23wkr6kwqftuw99m1u7.cyou'
 - '+.9f3.fiqolvmbw4y5ve7itmp4gz7qmf.cyou'
 - '+.9fit2wycor8.bcf64ymzrjzj227h6t.cyou'

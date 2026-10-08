@@ -1,6 +1,6 @@
 # Sukka's Ruleset - Reject Extra
-# Last Updated: 2026-10-08T10:17:52.239Z
-# Size: 76566
+# Last Updated: 2026-10-08T12:03:30.307Z
+# Size: 76551
 #
 # The domainset supports AD blocking, tracking protection, privacy protection, anti-mining
 #
@@ -28,7 +28,7 @@
 #   - https://ublockorigin.pages.dev/thirdparties/easylist-notifications.txt
 #   - https://urlhaus-filter.pages.dev/urlhaus-filter-domains-online.txt
 #
-# $content-hash-v1$:NmtODuDxJ79sMQoJ_fg6q6_ZA7RKT8HhTlDIjt9LtoQ$
+# $content-hash-v1$:aDXu-h1Jhma4-D-uPmxh5LHFzLUbPZa3PFjbpTIDEaQ$
 #########################################
 payload:
 - DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -18168,7 +18168,6 @@ payload:
 - DOMAIN-SUFFIX,vaguefact.pro
 - DOMAIN-SUFFIX,valeenjoy.com
 - DOMAIN-SUFFIX,valemedia.net
-- DOMAIN-SUFFIX,valesalon.cfd
 - DOMAIN-SUFFIX,valueclick.jp
 - DOMAIN-SUFFIX,vankhang.shop
 - DOMAIN-SUFFIX,vanmaymomo.me
@@ -22406,7 +22405,6 @@ payload:
 - DOMAIN-SUFFIX,realcounter.eu
 - DOMAIN-SUFFIX,realdrjudy.com
 - DOMAIN-SUFFIX,realist.gen.tr
-- DOMAIN-SUFFIX,reallywire.com
 - DOMAIN-SUFFIX,realpush.media
 - DOMAIN-SUFFIX,rearealrea.com
 - DOMAIN-SUFFIX,reariimime.com
@@ -30267,7 +30265,6 @@ payload:
 - DOMAIN-SUFFIX,jumpschmoos.cyou
 - DOMAIN-SUFFIX,junclikrmedi.com
 - DOMAIN-SUFFIX,jundclikrmdi.com
-- DOMAIN-SUFFIX,juponsteered.cfd
 - DOMAIN-SUFFIX,juqzuljruojt.com
 - DOMAIN-SUFFIX,juraraleucon.cfd
 - DOMAIN-SUFFIX,justhardness.com
@@ -31356,7 +31353,6 @@ payload:
 - DOMAIN-SUFFIX,quaidesbulles.fr
 - DOMAIN-SUFFIX,quaintcounty.pro
 - DOMAIN-SUFFIX,qualitygamer.com
-- DOMAIN-SUFFIX,quarlyachan.cyou
 - DOMAIN-SUFFIX,quarterserver.de
 - DOMAIN-SUFFIX,quasicurrant.com
 - DOMAIN-SUFFIX,queasydashed.top
@@ -32253,7 +32249,6 @@ payload:
 - DOMAIN-SUFFIX,tornactivity.pro
 - DOMAIN-SUFFIX,torpidtongue.com
 - DOMAIN-SUFFIX,torsounstick.cfd
-- DOMAIN-SUFFIX,toskbuffier.cyou
 - DOMAIN-SUFFIX,touchclarity.com
 - DOMAIN-SUFFIX,tour.cineble.com
 - DOMAIN-SUFFIX,tousleoutbid.com
@@ -33995,7 +33990,6 @@ payload:
 - DOMAIN-SUFFIX,cuteysdefang.qpon
 - DOMAIN-SUFFIX,cybersecurity.mba
 - DOMAIN-SUFFIX,cydonrespelt.cyou
-- DOMAIN-SUFFIX,cymarintroth.cyou
 - DOMAIN-SUFFIX,cypheraurigal.cfd
 - DOMAIN-SUFFIX,cypressbygone.com
 - DOMAIN-SUFFIX,daily.yubanet.com
@@ -36880,7 +36874,6 @@ payload:
 - DOMAIN-SUFFIX,tulipsameedge.com
 - DOMAIN-SUFFIX,tum8.vuu3bd53.lol
 - DOMAIN-SUFFIX,tunaspiritual.com
-- DOMAIN-SUFFIX,tundishfence.qpon
 - DOMAIN-SUFFIX,tunkajumping.cyou
 - DOMAIN-SUFFIX,tunketdocker.qpon
 - DOMAIN-SUFFIX,tur-ptt-posen.com
@@ -43239,7 +43232,6 @@ payload:
 - DOMAIN-SUFFIX,steamedkipper.cyou
 - DOMAIN-SUFFIX,steelbitepro24.com
 - DOMAIN-SUFFIX,steelhorsecoin.com
-- DOMAIN-SUFFIX,steppescooeed.cyou
 - DOMAIN-SUFFIX,steppesequence.com
 - DOMAIN-SUFFIX,stibbleberede.cyou
 - DOMAIN-SUFFIX,stionicgeodist.com
@@ -45179,7 +45171,6 @@ payload:
 - DOMAIN-SUFFIX,ajjlasruwwrlt.store
 - DOMAIN-SUFFIX,ajskgbnmafymf.space
 - DOMAIN-SUFFIX,ajujqdualdsao.space
-- DOMAIN-SUFFIX,ajxyjzwhhcznj.space
 - DOMAIN-SUFFIX,akdnhszqeqasz.store
 - DOMAIN-SUFFIX,akftqsaedhfqt.space
 - DOMAIN-SUFFIX,aknadnauhsmgu.space
@@ -47319,7 +47310,6 @@ payload:
 - DOMAIN-SUFFIX,hknztzqlkjzhc.space
 - DOMAIN-SUFFIX,hkxkdpxlemboe.space
 - DOMAIN-SUFFIX,hldijphcjszui.store
-- DOMAIN-SUFFIX,hldkhuflnbahs.space
 - DOMAIN-SUFFIX,hlgqbkgvfvelf.store
 - DOMAIN-SUFFIX,hlkwshtzpeuma.space
 - DOMAIN-SUFFIX,hlpjzdkddzyxb.space
@@ -49287,7 +49277,6 @@ payload:
 - DOMAIN-SUFFIX,praktijkewalts.info
 - DOMAIN-SUFFIX,prbxckwtajncq.space
 - DOMAIN-SUFFIX,preacheropening.com
-- DOMAIN-SUFFIX,preampsciboney.cyou
 - DOMAIN-SUFFIX,predestineshack.com
 - DOMAIN-SUFFIX,pregnantskipper.com
 - DOMAIN-SUFFIX,premium-utility.com
@@ -49391,7 +49380,6 @@ payload:
 - DOMAIN-SUFFIX,pwxnufxcwbbev.space
 - DOMAIN-SUFFIX,pwzxkpphqoeby.store
 - DOMAIN-SUFFIX,px9.nuderedtube.com
-- DOMAIN-SUFFIX,pxb9nb3bghif9j8.cfd
 - DOMAIN-SUFFIX,pxekfmmylcrqo.space
 - DOMAIN-SUFFIX,pxl-mailtracker.com
 - DOMAIN-SUFFIX,pxlanvvuiyrcm.space
@@ -55714,7 +55702,6 @@ payload:
 - DOMAIN-SUFFIX,qdkpyueaqswtv.online
 - DOMAIN-SUFFIX,qdmizarqbbyqv.online
 - DOMAIN-SUFFIX,qdmjtjfnzuqsr.online
-- DOMAIN-SUFFIX,qdmwrrtpfokna.online
 - DOMAIN-SUFFIX,qdpyytqowlroy.online
 - DOMAIN-SUFFIX,qdssy.balistrera.sbs
 - DOMAIN-SUFFIX,qdurzzrmxptvr.online
@@ -65976,7 +65963,6 @@ payload:
 - DOMAIN-SUFFIX,prudentialonerealty.com
 - DOMAIN-SUFFIX,psigloutishrameous.cyou
 - DOMAIN-SUFFIX,psychobunnycolombia.com
-- DOMAIN-SUFFIX,psycholsatineduessa.cfd
 - DOMAIN-SUFFIX,pukerrevisitassalto.cfd
 - DOMAIN-SUFFIX,pungovernorindustry.com
 - DOMAIN-SUFFIX,purposeolivebathtub.com
@@ -75756,7 +75742,6 @@ payload:
 - DOMAIN-SUFFIX,2wygltrjq1.h79xho6zgijze24hv94.cyou
 - DOMAIN-SUFFIX,5.5tvcz6ovxvxxptj71te9ipl7hggw.cyou
 - DOMAIN-SUFFIX,72rtlmvk2213hluu14qh7i5qxgnl8gr.cfd
-- DOMAIN-SUFFIX,72xlpn3pli94ml8gl16riyfzzyofyi.rest
 - DOMAIN-SUFFIX,9.f2kif7rht23wkr6kwqftuw99m1u7.cyou
 - DOMAIN-SUFFIX,9f3.fiqolvmbw4y5ve7itmp4gz7qmf.cyou
 - DOMAIN-SUFFIX,9fit2wycor8.bcf64ymzrjzj227h6t.cyou
