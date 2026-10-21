@@ -9,10 +9,11 @@ GitHub Actions 每日 03:00、15:00 UTC 从 `https://ruleset.skk.moe` 拉取规�
 - `Clash/`：YAML rule-provider，沿用上游的全部输出。
 - `MRS/domainset/`：`behavior: domain` 的 `.mrs`。
 - `MRS/ip/`：`behavior: ipcidr` 的 `.mrs`。
+- `MRS/non_ip/`：纯域名 `non_ip` 规则集的 `behavior: domain` `.mrs`。
 - `SingBox/source/`：上游 `sing-box/` 目录的 source JSON 原样镜像。
 - `SingBox/srs/`：用 [reF1nd/sing-box](https://github.com/reF1nd/sing-box-releases) 最新正式版 `rule-set compile` 编译的 `.srs`。
 
-MRS 格式只支持 `domain` 和 `ipcidr`。`Clash/non_ip/` 中的 `classical` 规则不生成 MRS，继续用 YAML。SRS 没有这个限制，上游每个 sing-box 规则集都有对应的 `.srs`。
+MRS 格式只支持 `domain` 和 `ipcidr`。`Clash/non_ip/` 中只含 `DOMAIN`、`DOMAIN-SUFFIX` 的规则集会额外生成 `MRS/non_ip/<name>.mrs`（`behavior: domain`，无损转换）；混有 `DOMAIN-KEYWORD`、`DOMAIN-WILDCARD`、`PROCESS-NAME`、IP 等条目的 `classical` 规则集不生成 MRS，继续用 YAML。上游某个规则集以后混入其他类型时，对应 `.mrs` 会被移除。SRS 没有这个限制，上游每个 sing-box 规则集都有对应的 `.srs`。
 
 ## sing-box 配置
 

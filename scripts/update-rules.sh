@@ -54,7 +54,9 @@ while IFS= read -r path; do
       ;;
     /Clash/non_ip/*)
       rule_type="classic"
-      mrs_behavior=""
+      # Pure DOMAIN / DOMAIN-SUFFIX lists also get a domain MRS (see make-mrs-domain-yaml.py);
+      # mixed lists are skipped there and stay YAML-only.
+      mrs_behavior="domain"
       ;;
     /Clash/ip/*)
       rule_type="ipcidr"
@@ -85,6 +87,12 @@ while IFS= read -r path; do
       mrs_input="$(mktemp)"
       if ! python3 ./scripts/make-mrs-ipcidr-yaml.py "$yaml_path" "$mrs_input"; then
         echo "Skip MRS with no valid CIDR: $yaml_path" >&2
+        rm -f "$mrs_input" "$mrs_path"
+        continue
+      fi
+    elif [[ "$path" == /Clash/non_ip/* ]]; then
+      mrs_input="$(mktemp)"
+      if ! python3 ./scripts/make-mrs-domain-yaml.py "$yaml_path" "$mrs_input"; then
         rm -f "$mrs_input" "$mrs_path"
         continue
       fi
