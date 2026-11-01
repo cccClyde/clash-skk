@@ -88,8 +88,41 @@ func run(ruleType, sourceURL, outputPath string) error {
 	return nil
 }
 
+// permanentError marks a failure that retrying cannot fix (e.g. HTTP 404).
+type permanentError struct{ err error }
+
+func (e permanentError) Error() string { return e.err.Error() }
+func (e permanentError) Unwrap() error { return e.err }
+
+const (
+	fetchTimeout = 90 * time.Second
+	fetchRetries = 3
+)
+
+// fetchURL downloads sourceURL, retrying transient failures. ruleset.skk.moe
+// occasionally stalls mid-body; the old 30s whole-request timeout then killed
+// the nightly run for a single slow file.
 func fetchURL(sourceURL string) ([]byte, error) {
-	client := &http.Client{Timeout: 30 * time.Second}
+	client := &http.Client{Timeout: fetchTimeout}
+	var lastErr error
+	for attempt := 1; attempt <= fetchRetries; attempt++ {
+		data, err := fetchOnce(client, sourceURL)
+		if err == nil {
+			return data, nil
+		}
+		lastErr = err
+		var permanent permanentError
+		if errors.As(err, &permanent) {
+			break
+		}
+		if attempt < fetchRetries {
+			time.Sleep(time.Duration(attempt) * 5 * time.Second)
+		}
+	}
+	return nil, fmt.Errorf("fetch %s: %w", sourceURL, lastErr)
+}
+
+func fetchOnce(client *http.Client, sourceURL string) ([]byte, error) {
 	req, err := http.NewRequest(http.MethodGet, sourceURL, nil)
 	if err != nil {
 		return nil, fmt.Errorf("build request: %w", err)
@@ -102,8 +135,11 @@ func fetchURL(sourceURL string) ([]byte, error) {
 	}
 	defer resp.Body.Close()
 
+	if resp.StatusCode >= 400 && resp.StatusCode < 500 {
+		return nil, permanentError{fmt.Errorf("unexpected status %s", resp.Status)}
+	}
 	if resp.StatusCode < 200 || resp.StatusCode >= 300 {
-		return nil, fmt.Errorf("fetch url: unexpected status %s", resp.Status)
+		return nil, fmt.Errorf("unexpected status %s", resp.Status)
 	}
 
 	data, err := io.ReadAll(resp.Body)
