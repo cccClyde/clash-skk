@@ -1,6 +1,6 @@
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2026-11-16T10:24:54.817Z
-# Size: 149191
+# Last Updated: 2026-11-16T13:41:27.047Z
+# Size: 149209
 #
 # The domainset supports AD blocking, tracking protection, privacy protection, anti-mining
 #
@@ -14,7 +14,7 @@
 #   - https://raw.githubusercontent.com/easylist/easylist/gh-pages/easyprivacy.txt
 #   - https://ublockorigin.pages.dev/filters/unbreak.min.txt
 #
-# $content-hash-v1$:fg2YRQYxVJGS8FCliDsOe7w6yi20wpxc2wMAhGWOdkY$
+# $content-hash-v1$:O1hftLzsRDK-31D_n4zhcw8UaLio1rfFsdaoi4GrERI$
 #########################################
 payload:
 - '7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe'
@@ -12787,6 +12787,7 @@ payload:
 - '+.heap.drop.com'
 - '+.hear8crew.com'
 - '+.heat6have.com'
+- '+.hebesewer.cfd'
 - '+.heky0uxng.com'
 - '+.helasmess.com'
 - '+.heliumads.com'
@@ -16301,6 +16302,7 @@ payload:
 - '+.vudnpysryo.in'
 - '+.vuielmilg.com'
 - '+.vurafsquzd.in'
+- '+.vutvrswvf.com'
 - '+.vvgxvczfx.com'
 - '+.vvogrqq6r.com'
 - '+.vvs0eu66z.com'
@@ -18982,6 +18984,7 @@ payload:
 - '+.edyr2ip7zg.com'
 - '+.edzmna.pdp.com'
 - '+.eebd3c4c48.com'
+- '+.eediarian.cyou'
 - '+.eel.tibber.com'
 - '+.efglbp.baur.de'
 - '+.efh2rahxxq.com'
@@ -26230,6 +26233,7 @@ payload:
 - '+.dig.lianjia.com'
 - '+.digital.att.com'
 - '+.digital.zowi.nl'
+- '+.dilliskahu.cyou'
 - '+.dimmerkilly.cfd'
 - '+.dimoo.monos.com'
 - '+.dirdumaigre.com'
@@ -29947,6 +29951,7 @@ payload:
 - '+.sitaoabuser.com'
 - '+.site-config.com'
 - '+.site.tiny.cloud'
+- '+.siwdomfivcc.com'
 - '+.sixft-apart.com'
 - '+.sixquickrun.com'
 - '+.sixscissors.com'
@@ -45140,6 +45145,7 @@ payload:
 - '+.jtbaoo.belvini.de'
 - '+.jtqfhx.kidioui.fr'
 - '+.jubilantvista.com'
+- '+.jufferfurtum.cyou'
 - '+.jugfulsagnat.cyou'
 - '+.juicemovement.com'
 - '+.julidcosiest.cyou'
@@ -46495,6 +46501,7 @@ payload:
 - '+.nucleindinkly.com'
 - '+.nucppjcuskmeg.com'
 - '+.numinefidding.cfd'
+- '+.nunchproagon.rest'
 - '+.nurij.fathead.com'
 - '+.nurse.fastaff.com'
 - '+.nuwoxw.incanto.eu'
@@ -52057,6 +52064,7 @@ payload:
 - '+.bcigfr.www.uoc.edu'
 - '+.bcob.charlotte.edu'
 - '+.bcopkduemfsfx.site'
+- '+.bcpagzxlkfjhs.site'
 - '+.bcqhr.thecomfy.com'
 - '+.bcrct.bumpboxx.com'
 - '+.bcxaiqdkdmcbu.site'
@@ -57239,6 +57247,7 @@ payload:
 - '+.numericgumihan.com'
 - '+.nunnifysparkle.com'
 - '+.nurse.trustaff.com'
+- '+.nutmegreprise.rest'
 - '+.nvizqbnlvfrfr.site'
 - '+.nvumcv.standoil.kr'
 - '+.nvykxp.mystays.com'
@@ -64355,6 +64364,7 @@ payload:
 - '+.diwnskxyaitmk.space'
 - '+.djfbhwtkraukq.space'
 - '+.djlleurfotfzy.space'
+- '+.djoiauabiiymr.space'
 - '+.dkeaf.labelland.com'
 - '+.dkljj.eikonikos.com'
 - '+.dkno.on-channel.com'
@@ -72343,6 +72353,7 @@ payload:
 - '+.vm.loveamberx.co.uk'
 - '+.vmcrkgnrffkgp.space'
 - '+.vmdwuq.chadotel.com'
+- '+.vmovwtkgvbpkz.space'
 - '+.vmqxjqgaanhkb.space'
 - '+.vmrwcy.lejebolig.dk'
 - '+.vmtrypsvjakyl.space'
@@ -72835,6 +72846,7 @@ payload:
 - '+.zqbpgojxnbvzt.space'
 - '+.zqcpf.wovenbyrd.com'
 - '+.zqika.helloryse.com'
+- '+.zqrtnzf9on9zjf1.cfd'
 - '+.zqycdzdckeyuf.space'
 - '+.zrbezdaddiahk.space'
 - '+.zs.voyage-prive.com'
@@ -75173,6 +75185,7 @@ payload:
 - '+.euxnoxhweugaa.online'
 - '+.ev.nginxignition.app'
 - '+.eva1f.meerkleding.nl'
+- '+.evdopnbmfqazj.online'
 - '+.event-api.reverb.com'
 - '+.event-stream.spot.im'
 - '+.event.clientgear.com'
@@ -84197,6 +84210,7 @@ payload:
 - '+.communication.imec.be'
 - '+.community.keeperz.app'
 - '+.completionloyalty.com'
+- '+.complicated-power.com'
 - '+.comradegoodsfloor.com'
 - '+.conferences.cigna.com'
 - '+.confessinvaluable.com'
@@ -84342,6 +84356,7 @@ payload:
 - '+.cueohf.forumotion.net'
 - '+.cueohf.forumotion.org'
 - '+.cueohf.lebonforum.com'
+- '+.cuoncvmuyfepc.website'
 - '+.cuphk.ecsportsusa.com'
 - '+.cupra.euroshop.com.pe'
 - '+.custom.chezcalinea.fr'
@@ -88252,6 +88267,7 @@ payload:
 - '+.oozgka.immoscout24.ch'
 - '+.ophan.theguardian.com'
 - '+.ophimdoxrnedh.website'
+- '+.oplxgyytdinen.website'
 - '+.oppqmyswswffs.website'
 - '+.opticksprotection.com'
 - '+.optimeeze.appspot.com'
@@ -116167,6 +116183,7 @@ payload:
 - '+.difficultyanthonymode.com'
 - '+.digital.adt-worldwide.com'
 - '+.digitalworkplace.ricoh.fr'
+- '+.diluteeswasherwoeworn.cfd'
 - 'dingwei.nos-jd.163yun.com'
 - '+.direct-collect.dy-api.com'
 - '+.directelia.amourideal.com'
@@ -148551,6 +148568,7 @@ payload:
 - '+.desuscripcion.phg.palladiumhotelgroup.com'
 - '+.dev.supplyanddemandbook.colibritrader.com'
 - '+.drhsder4m.marinapinhasdermatologia.com.br'
+- '+.e6cbpituj7n1kbo2pw8h69nb1y6vfvej386m.rest'
 - '+.easyjet.com.edgekey.admin.net.easyjet.com'
 - '+.easyjet.inner.com.edgekey.net.easyjet.com'
 - '+.easyjet.staff.com.edgekey.net.easyjet.com'
