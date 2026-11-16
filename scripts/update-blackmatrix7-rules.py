@@ -13,6 +13,7 @@ from typing import Dict, Iterable, List, Tuple
 SOURCES = {
     "WeChat": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml",
     "YouTube": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml",
+    "Spotify": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml",
 }
 
 
@@ -25,15 +26,21 @@ def fetch(url: str) -> str:
 def payload_rules(text: str) -> List[str]:
     rules = []
     in_payload = False
+    has_payload = any(line.strip() == "payload:" for line in text.splitlines())
     for raw in text.splitlines():
         stripped = raw.strip()
         if stripped == "payload:":
             in_payload = True
             continue
-        if not in_payload:
+        if stripped.startswith("#") or not stripped:
+            continue
+        # .yaml files declare payload:, .list files are a bare rule list
+        if has_payload and not in_payload:
             continue
         if stripped.startswith("- "):
             rules.append(stripped[2:].strip())
+        elif not has_payload and "," in stripped:
+            rules.append(stripped)
     return rules
 
 
@@ -62,6 +69,8 @@ def classify(rules: Iterable[str]) -> Tuple[List[str], List[str], List[str]]:
                 domain_seen.add(converted)
             continue
         if kind in {"IP-CIDR", "IP-CIDR6"}:
+            # classical entries may carry extra parameters such as no-resolve
+            value = value.split(",")[0].strip()
             try:
                 converted = str(ipaddress.ip_network(value, strict=False))
             except ValueError:

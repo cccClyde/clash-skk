@@ -13,3 +13,9 @@ Sources are mirrored under `Clash/blackmatrix7/`. MRS supports only domain and i
 - domain MRS entries: 179
 - ipcidr MRS entries: 3
 - retained only in YAML: DOMAIN-KEYWORD,youtube
+
+## Spotify
+
+- domain MRS entries: 26
+- ipcidr MRS entries: 2
+- retained only in YAML: DOMAIN-KEYWORD,spotify, PROCESS-NAME,com.spotify.music
